@@ -1,0 +1,11 @@
+body {
+  background-color: black;
+}
+h1,
+a {
+  color: white;
+  display: block;
+}
+.container {
+  display: inline-block;
+}
