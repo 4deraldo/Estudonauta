@@ -7,9 +7,10 @@
   <title>Menu responsivo</title>
   <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheets">
   <link rel=" stylesheet" href="estilos/style.css" media="all">
+  <link rel="stylesheet" href="estilos/media-queries.css">
 </head>
 
-<body>
+<body onresize="mudouTamanho" ()>
   <header>
     <h1>Meu site</h1>
 
@@ -83,6 +84,15 @@
       } else {
         itens.style.display = 'block'
       }
+    }
+
+    function mudouTamanho() {
+      if (windw.innerWidth >= 768) {
+        itens.style.display = 'block'
+      } else {
+        itens.style.display = 'none'
+      }
+
     }
   </script>
 </body>
